@@ -38,3 +38,12 @@ def apc40_set_fw_mode(mode):
                           0xF7])
 
         output.send(msg)
+
+
+def main():
+    """Set to something useful"""
+    apc40_set_fw_mode(1)
+
+
+if __name__ == '__main__':
+    main()
