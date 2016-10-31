@@ -10,12 +10,11 @@ import mido
 
 def apc40_set_fw_mode(mode):
     """Set the firmware mode to the mode supplied by the user"""
-
-    if (type(mode) != int) and (mode >= 3):
+    if mode > 2:
         print("Please enter a valid mode\n\
                0: Generic Mode\n\
                1: Ableton Live Mode\n\
-               2: Alternate Ableton Live Mode\n")
+               2: Alternate Ableton Live Mode")
     else:
         mido.set_backend('mido.backends.rtmidi')
         try:
