@@ -1,0 +1,25 @@
+Goals
+
+Create function that changes firmware mode on APC40
+
+
+======================================================================
+
+ipython notes
+
+Mido:
+	import mido
+
+	mido.set_backend('mido.backends.rtmidi')
+
+	mido.get_output_names()
+
+	msg - inport.receive()
+
+	mode = 0x41
+
+	msg = mido.parse([0xF0, 0x47, 0x00, 0x73, 0x60, 0x00, 0x04, mode, 0x08, 0x04, 0x01, 0xF7])
+
+	output.send(msg)
+
+	output = mido.open_output('Akai APC40')
