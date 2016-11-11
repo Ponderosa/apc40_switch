@@ -4,6 +4,7 @@ user defined firmware mode on the APC40.
 
 Requirements: mido, python-rtmidi
 """
+from __future__ import print_function
 
 import mido
 
