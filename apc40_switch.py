@@ -43,6 +43,8 @@ def apc40_set_fw_mode(mode):
 
 def main():
     """Set to something useful"""
+    # TODO: use the argparse module to make this a proper command line program.
+    # accept either a number or name as the argument.
     apc40_set_fw_mode(1)
 
 
